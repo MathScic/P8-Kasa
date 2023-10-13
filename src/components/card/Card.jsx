@@ -1,17 +1,11 @@
 import React from 'react'
 import './Card.css'
-import Appartment from './Appartment.jsx'
 
-
-const Card = () => {
+const Card = ({flat}) => {
   return (
-    <div className='grid'>
-      <Appartment />
-      <Appartment />
-      <Appartment />
-      <Appartment />
-      <Appartment />
-      <Appartment />
+    <div>
+      <p>{flat.title}</p>
+      <img src={flat.cover} alt='' />
     </div>
   )
 }

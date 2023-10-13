@@ -1,0 +1,13 @@
+.appartment {
+
+}
+
+.appart-subtitle {
+
+}
+
+@media (max-width: 768px) {
+    .appartment {
+        flex-basis: 100%;
+    }
+}

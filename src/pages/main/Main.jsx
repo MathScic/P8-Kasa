@@ -1,15 +1,19 @@
 import React from 'react'
 import ReactDOM  from 'react-dom'
 import './Main.css'
+import flats from '../../flats'
+import Card from '../../components/card/Card'
 
-const Main = (props) => {
-    const children = props.children
-    console.log("children", children);
+
+const Main = () => {
 
   return (
-    <div className='main'>{children}</div>
+    <div className='main'>{flats.map(flat => (
+      <Card flat={flat}/> //Appel composant card avec propriété flat 
+    ))}</div>
   )
 }
+
 
 
 

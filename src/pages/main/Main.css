@@ -1,4 +1,25 @@
 .main {
     padding-inline: 2rem;
     margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 2rem;
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 15px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.main img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background: linear-gradient(rgba(255, 255, 255, 0));
+}
+
+.main p {
+    position: absolute;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: 500;
 }
