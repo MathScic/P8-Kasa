@@ -1,20 +1,21 @@
 .main {
     padding-inline: 2rem;
     margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    gap: 2rem;
-    background-color: rgba(246, 246, 246, 1);
-    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:4rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    padding: center;
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 15px;
 }
 
 .main img {
-    width: 200px;
-    height: 200px;
+    width: 340px;
+    height: 340px;
     border-radius: 15px;
-    background: linear-gradient(rgba(255, 255, 255, 0));
 }
 
 .main p {
@@ -22,4 +23,6 @@
     font-size: 15px;
     color: aliceblue;
     font-weight: 500;
+    padding-left: 5px;
+
 }

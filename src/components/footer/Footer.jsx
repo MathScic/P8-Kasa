@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-        <img src='Logo-footer.png' alt='Logo' />
+        <img src='assets/Logo-footer.png' alt='Logo' />
     </div>
   )
 }

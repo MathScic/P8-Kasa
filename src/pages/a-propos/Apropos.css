@@ -11,10 +11,62 @@
     background-color: #ff6060;
     border-radius: 5px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between ;
     padding-left: 1rem;
     margin: 1rem;
     margin-right: 4rem;
     margin-left: 4rem;
     height: 40px;
+}
+
+.apropos-container i {
+    color: white;
+    position: absolute;
+    font-size: 25px;
+}
+
+.apropos-button {
+    background-color: #ff6060;
+    border: #ff6060;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    
+}
+
+.apropos-content {
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 5px;
+    width: 1000px;
+}
+
+.apropos-content p {
+    max-width: auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: auto;
+    max-height: 0;
+    /**overflow: hidden;*/
+    animation-name: slideout;
+    animation-duration: 1s;
+}
+
+@keyframes slideout {
+    from {
+        margin-top: 0%;
+        height: 0px;
+    }
+
+    to {
+        margin-bottom: 100%;
+        height: 30px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
 }

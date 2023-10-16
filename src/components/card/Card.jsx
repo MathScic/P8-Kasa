@@ -1,12 +1,13 @@
 import React from 'react'
 import './Card.css'
+import {Link} from 'react-router-dom'
 
 const Card = ({flat}) => {
   return (
-    <div>
+    <Link to="flat" >
       <p>{flat.title}</p>
       <img src={flat.cover} alt='' />
-    </div>
+    </Link>
   )
 }
 

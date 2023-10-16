@@ -9,7 +9,7 @@ const Main = () => {
 
   return (
     <div className='main'>{flats.map(flat => (
-      <Card flat={flat}/> //Appel composant card avec propriété flat 
+      <Card flat={flat} />
     ))}</div>
   )
 }

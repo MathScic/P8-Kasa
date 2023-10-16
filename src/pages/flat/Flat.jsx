@@ -1,14 +1,12 @@
 import React from 'react'
 import './Flat.css'
-import { Link } from 'react-router-dom'
 
-const Flat = () => {
+
+
+const Flat = (flats) => {
   return (
-    <nav>
-        <Link to="/" >
-          
-        </Link>
-    </nav>
+    <div>
+    </div>
   )
 }
 
