@@ -1,9 +1,6 @@
-.appartment {
-
-}
-
-.appart-subtitle {
-
+.flat-page {
+    border: 1px solid black;
+    color: #ff6060;
 }
 
 @media (max-width: 768px) {

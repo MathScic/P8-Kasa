@@ -1,0 +1,61 @@
+/**Description**/
+
+.description-equipement {
+    display: flex;
+    gap: 2rem;
+}
+
+.flat-description p {
+    margin-block: 0;
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flat-description i {
+    padding-right: 1rem;
+}
+
+.description-title {
+    border: 1px solid blue;
+    background-color: #ff6060;
+    color: white;
+    padding-block: 0.7rem;
+    border-radius: 7px;
+}
+
+.description-content {
+    background-color: rgba(169 169 169 / 20%);
+    color: #ff6060;
+    border-radius: 7px;
+    padding-block: 0.7rem;
+}
+
+/**Equipement**/
+.flat-equipement p {
+    margin-block: 0;
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flat-equipement i {
+    padding-right: 1rem;
+}
+
+.equipement-title {
+    border: 1px solid blue;
+    background-color: #ff6060;
+    color: white;
+    padding-block: 0.7rem;
+    border-radius: 7px;
+}
+
+.equipement-content {
+    background-color: rgba(169 169 169 / 20%);
+    color: #ff6060;
+    border-radius: 7px;
+    padding-block: 0.7rem;
+}

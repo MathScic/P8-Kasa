@@ -1,0 +1,66 @@
+/**Header (Titre appart, localisation, tag, Nom et Etoiles notation**/
+.flat-title h1 {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.flat-title h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.flat-tag-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 130px));
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 0.2em;
+    margin-top: 0.5rem;
+}
+
+.flat-tag-flex span {
+    border: 1px solid #ff6060;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 10px;
+    padding: 0.2em 2em;
+}
+
+.flat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.flat-owner-badge {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.flat-badge-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.flat-badge-flex h3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-block: 0;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.flat-owner-stars {
+    padding-top: 2rem;
+    font-size: 30px;
+}

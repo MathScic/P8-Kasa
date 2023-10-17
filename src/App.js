@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="apropos" element={<APropos />} />
-          <Route path="flat" element={<Flat />} />
+          <Route path="/flat" element={<Flat />} />
         </Routes>
       </Router>
       <Footer />

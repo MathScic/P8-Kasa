@@ -31,7 +31,6 @@
     display: flex;
     align-items: center;
     margin-right: 2rem;
-    
 }
 
 .apropos-content {
@@ -50,8 +49,6 @@
     width: auto;
     max-height: 0;
     /**overflow: hidden;*/
-    animation-name: slideout;
-    animation-duration: 1s;
 }
 
 @keyframes slideout {
