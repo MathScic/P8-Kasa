@@ -2,7 +2,7 @@ import React from 'react'
 import './FlatDescription.css'
 import PropTypes from 'prop-types'
 
-function AppartmentDescription() {
+function AppartmentDescription(props) {
     return (
         <div className='description-equipement'>
         <div className="flat-description">

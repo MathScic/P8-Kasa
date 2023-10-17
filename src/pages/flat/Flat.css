@@ -1,10 +1,20 @@
 .flat-page {
-    border: 1px solid black;
     color: #ff6060;
 }
 
-@media (max-width: 768px) {
-    .appartment {
-        flex-basis: 100%;
+@media (max-width: 425px) {
+    .navbar img {
+        width: 150px;
     }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .navbar a {
+        font-weight: 500;
+    }
+
 }

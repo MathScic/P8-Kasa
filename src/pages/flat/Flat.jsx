@@ -4,8 +4,12 @@ import flats from '../../flats'
 import FlatDescription from '../../components/flatDescription/FlatDescription'
 import FlatImg from '../../components/flatImg/FlatImg'
 import FlatHeader from '../../components/flatHeader/FlatHeader'
+import { useLocation} from 'react-router-dom'
 
 const Flat = (flats) => {
+
+  const location = useLocation()
+  console.log('location',location);
 
   return (
     <div className="flat-page">
@@ -18,8 +22,3 @@ const Flat = (flats) => {
 
 export default Flat
 
-    {/** {flats.map((flat) => (
-        <div key={flat.id}>
-          <h1>{flat.title}</h1>
-        </div>
-      ))}*/} 
