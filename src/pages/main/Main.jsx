@@ -12,14 +12,7 @@ const Main = (props) => {
     <div className='main'>{flats.map(flat => (
       <Card flat={flat} />
     ))}</div>
-    
-
-
-
   )
 }
-
-
-
 
 export default Main

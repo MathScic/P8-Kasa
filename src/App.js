@@ -7,7 +7,6 @@ import Main from "./pages/main/Main";
 import APropos from "./pages/a-propos/Apropos";
 import Navbar from "./navbar/Navbar";
 import Flat from "./pages/flat/Flat";
-import AppartmentImg from "./components/flatImg/FlatImg";
 
 function App() {
   return (
