@@ -11,9 +11,11 @@ function FlatImg({pictures}) {
         const newIndex = currentIndex +1;
 
         if (newIndex === pictures.length) {
-            newIndex = 0
+            setCurrentIndex(0)
+        } else {
+            setCurrentIndex(newIndex)
         }
-        setCurrentIndex(newIndex) /**Fais avancer l'index d'img de 1 ce qui permet de faire suivant **/
+          /**Fais avancer l'index d'img de 1 ce qui permet de faire suivant **/
         /** curentIndex ++  
          * if currentIndex === 5 (pictures.lenght) = 0 **/
     }
@@ -22,9 +24,11 @@ function FlatImg({pictures}) {
         const newIndex = currentIndex -1 
 
         if (newIndex === -1) {
-            newIndex = pictures.length -1 
+            setCurrentIndex(pictures.length -1)
+        } else {
+            setCurrentIndex(newIndex)
         }
-        setCurrentIndex(newIndex) /**Fais reculer l'index d'img de 1 ce qui permet de faire précédent **/
+         /**Fais reculer l'index d'img de 1 ce qui permet de faire précédent **/
        /** curentIndex --  
          * if currentIndex === -1 (pictures.lenght) = 4 **/
     } 
