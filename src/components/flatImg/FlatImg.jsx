@@ -19,10 +19,10 @@ function FlatImg({pictures}) {
     }
     
     const prevSlide = () => {
-        const newIndex = currentIndex -1;
+        const newIndex = currentIndex -1 
 
         if (newIndex === -1) {
-            newIndex = pictures.length -1
+            newIndex = pictures.length -1 
         }
         setCurrentIndex(newIndex) /**Fais reculer l'index d'img de 1 ce qui permet de faire précédent **/
        /** curentIndex --  
