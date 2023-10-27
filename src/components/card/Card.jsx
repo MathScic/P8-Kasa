@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const Card = ({flat}) => {
   return (
-    <Link to="flat" >
+    <Link to={`flat/${flat.id}`} >
       <p>{flat.title}</p>
       <img src={flat.cover} alt='' />
     </Link>

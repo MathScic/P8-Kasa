@@ -7,6 +7,7 @@ import Main from "./pages/main/Main";
 import APropos from "./pages/a-propos/Apropos";
 import Navbar from "./navbar/Navbar";
 import Flat from "./pages/flat/Flat";
+import Error from "./components/error/Error";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Banner />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="apropos" element={<APropos />} />
-          <Route path="/flat" element={<Flat />} />
+          <Route path="/apropos" element={<APropos />} />
+          <Route path="/flat/:flatId" element={<Flat />} />
+          <Route path="/error" element={<Error />} />
         </Routes>
       </Router>
       <Footer />

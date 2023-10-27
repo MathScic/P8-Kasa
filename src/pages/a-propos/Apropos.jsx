@@ -4,32 +4,29 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import './Apropos.css'
 
-const Apropos = () => {
+const Apropos = (props) => {
 
-  const [isCollapsed, setIsCollapsed] = useState(true)
-
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed)
+  const [aproposContent, setAproposContent] = useState(false)
+  const showContent = () => {
+      setAproposContent(!aproposContent)
   }
 
   return (
       <div className='apropos'>
         <div className='apropos-container'>
           <p className='apropos-writing'>Fiabilité</p>
-          <button className='apropos-button' onClick={toggleCollapse} >
-            <i className={`fa-solid fa-chevron-${isCollapsed? 'up' : 'down'}`}></i>
+          
+          <button className='apropos-button' >
+            <p className=''><i class="fa-solid fa-chevron-down hidden" onClick={showContent}></i></p>
+            {aproposContent &&<p className='apropos-button-content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt.</p>}
           </button>
-          {isCollapsed && (
-            <div className='apropos-content'>
-              <p>Contenue du Fiabilité</p>
-            </div>
-          )}
+
         </div>
 
         <div className='apropos-container'>
           <p className='apropos-writing'>Respect</p>
           <button className='apropos-button'>
-            <i class="fa-solid fa-chevron-down"></i>
+          <i class="fa-solid fa-chevron-down"></i>
           </button>
         </div>
 
