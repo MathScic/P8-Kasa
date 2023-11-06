@@ -5,6 +5,14 @@ import flats from '../../flats'
 
  function AppartmentHeader(props) {
 
+  function renderStars(rating) {
+    const stars = [];
+    for (let i = 0; i < rating; i++) {
+      stars.push(<i key={i} className="fa-solid fa-star"></i>);
+    }
+    return stars;
+  }
+
 return (
 <div className="flat-header">
     <div className="flat-title">
@@ -25,7 +33,7 @@ return (
       </div>
         <div className="flat-owner-stars">
           <span>
-            <i class="fa-solid fa-star">{props.rating}</i>
+            <i class="fa-solid fa-star">{renderStars(props.rating)}</i>
           </span>
         </div>
     </div>
