@@ -9,23 +9,29 @@
 }
 
 .arrow {
-    position: absolute;
-    width: 100%;
+    /**max-width: 100%;**/
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 21rem;
+    left: 2rem;
+    right: 2rem;
+    z-index: 1;
+}
+
+.arrow-left, .arrow-right {
+    font-size: 50px;
     color: white;
+    margin: 0 10px;
 }
 
 .arrow-left {
-    font-size: 50px;
-    margin-left: 1rem;
-    margin-top: -230px;
+    margin-left: 0;
 }
 
 .arrow-right {
-    font-size: 50px;
-    margin-right: 3rem;
-    margin-top: -230px;
+    margin-right: 0;
 }
 
 .pagination {
@@ -38,4 +44,15 @@
     margin-top: -2rem;
     position: absolute;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .flat-img {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    .arrow {
+        top: 12rem;   
+    }
 }

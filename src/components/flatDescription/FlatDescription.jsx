@@ -11,12 +11,12 @@ function AppartmentDescription(props) {
     }
 
     return (
-    <div className='description-equipement'>
-        <div className="flat-description">
-            <p className='description-title'>{props.title}<i class="fa-solid fa-chevron-down" onClick={showContent}></i></p>
-            {show &&<p className='description-content hidden'>{props.content}</p>}   
-        </div>
-    </div>
+            <section className='flat-description'>
+                <div className="">
+                    <p className='description-title'>{props.title}<i class="fa-solid fa-chevron-down" onClick={showContent}></i></p>
+                    {show &&<div className='description-content'>{props.content}</div>}   
+                </div>
+            </section>
     )
 
 }

@@ -14,12 +14,11 @@ function App() {
     <React.StrictMode>
       <Router>
         <Navbar />
-        <Banner />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/apropos" element={<APropos />} />
           <Route path="/flat/:flatId" element={<Flat />} />
-          <Route path="/error" element={<Error />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
       <Footer />

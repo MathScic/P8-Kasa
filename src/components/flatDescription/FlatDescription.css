@@ -1,11 +1,14 @@
 /**Description**/
 
 .description-equipement {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 2rem;
     overflow: hidden;
     margin-bottom: 3rem;
+}
+
+.flat-description {
+    width: 50%;
 }
 
 .flat-description p {
@@ -13,7 +16,6 @@
     padding-left: 0.5rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .flat-description i {
@@ -40,35 +42,9 @@
     animation: slidein 1s ease-in-out;
     flex-basis: calc(50% - 5px);
     margin-right: 5px;
-}
-
-
-/**Equipement**/
-.flat-equipement p {
-    margin-block: 0;
-    padding-left: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flat-equipement i {
-    padding-right: 1rem;
-}
-
-.equipement-title {
-    background-color: #ff6060;
-    color: white;
-    padding-block: 0.7rem;
-    border-radius: 7px;
-}
-
-.equipement-content {
-    background-color: rgba(169 169 169 / 20%);
-    color: #ff6060;
-    border-radius: 7px;
-    padding-block: 0.7rem;
-    animation: slidein 1s ease-in-out;
+    list-style-type: none;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -84,22 +60,23 @@
 
 @keyframes slideout {
     from {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
 
     to {
-        transform: translateY(-100%);
+        transform: translateY(0%);
     }
 }
 
-.description-title, .equipement-title {
-    display: flex;
-}
 
-@media (max-width: 425px) {
+
+@media (max-width: 768px) {
     .description-equipement {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+    }
+
+    .flat-description {
+        width: 100%;
     }
 }
