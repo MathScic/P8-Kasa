@@ -3,27 +3,29 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import './Apropos.css'
+import Banner from '../../components/banner/Banner'
 
 const Apropos = (props) => {
 
   const [aproposContent, setAproposContent] = useState(false)
+  const [isRotated, setRotated] = useState(false)
   const showContent = () => {
       setAproposContent(!aproposContent)
+      setRotated(!isRotated)
   }
 
   return (
-      <div className='apropos'>
-        <div className='apropos-container'>
-          <p className='apropos-writing'>Fiabilité</p>
-          
-          <button className='apropos-button' >
-            <p className=''><i class="fa-solid fa-chevron-down hidden" onClick={showContent}></i></p>
-            {aproposContent &&<p className='apropos-button-content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt.</p>}
-          </button>
+      <div>
+        <Banner />
+      <div className=''>
+          <section className={`apropos-button`}>
+            <div className=''>
+              <p className='apropos-writing'>Fiabilité<i class={`fa-solid fa-chevron-down hidden ${isRotated ? 'rotated' : ''}`} onClick={showContent}></i></p>
+              {aproposContent &&<p className='apropos-button-content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt.</p>}
+            </div>
+          </section>
 
-        </div>
-
-        <div className='apropos-container'>
+       {/*<div className='apropos-container'>
           <p className='apropos-writing'>Respect</p>
           <button className='apropos-button'>
           <i class="fa-solid fa-chevron-down"></i>
@@ -42,8 +44,9 @@ const Apropos = (props) => {
           <button className='apropos-button'>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-        </div>
+        </div>*/}
       </div>
+      </div>  
   )
 }
 

@@ -1,89 +1,64 @@
-.apropos-writing {
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 20px;
+.apropos-button {
+    margin-bottom: 2rem;
 }
 
-.apropos-container {
-    border: 1px solid #ff6060;
+.apropos-writing {
+    margin: auto;
+    color : white; 
+    font-size: 20px;
+    font-weight: 400;
     background-color: #ff6060;
     border-radius: 5px;
     display: flex;
-    justify-content: space-between ;
-    padding-left: 1rem;
-    margin: 1rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
+    justify-content: space-between;
+    align-items: center;
     height: 40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 80%;
+    position: relative;
 }
 
-.apropos-container p {
-    margin-block: 0;
-    padding-left: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.apropos-writing i {
+    transition: transform 0.5s ease-in-out;
 }
 
-.apropos-container-description {
-    background-color: rgba(169 169 169 / 20%);
-    color: #ff6060;
-    border-radius: 7px;
-    padding-block: 0.7rem;
+.apropos-writing i:hover {
+    cursor: pointer;
 }
 
-.apropos-container i {
-    color: black;
-    position: absolute;
-    font-size: 25px;
-}
-
-.apropos-button {
-    background-color: #ff6060;
-    border: #ff6060;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 2rem;
+.apropos-writing i.rotated {
+    transform: rotate(180deg);
 }
 
 .apropos-button-content {
+    margin: auto;
+    width: 80%;
     background-color: rgba(169 169 169 / 20%);
     color: #ff6060;
     border-radius: 7px;
     padding-block: 0.7rem;
     animation: slidein 1s ease-in-out;
-}
-
-.apropos-content {
-    background-color: rgba(246, 246, 246, 1);
-    border-radius: 5px;
-    width: 1000px;
-    
-}
-
-.apropos-content p {
-    max-width: auto;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
+    width: 81%;
+    list-style-type: none;
     padding-left: 1rem;
-    padding-right: 1rem;
-    width: auto;
-    max-height: 0;
-    /**overflow: hidden;*/
-    
+    padding-bottom: 1rem;
+}
+
+.apropos-button-content.visible {
+    max-height: 100px;
+    margin-top: 10px;
+    opacity: 1;
 }
 
 @keyframes slidein {
     from {
-        transform: translateY(0%);
+        transform: translateY(-100%);
+        opacity: 0;
     }
 
     to {
-        transform: translateX(100%);
+        transform: translateY(0%);
     }
 }
 

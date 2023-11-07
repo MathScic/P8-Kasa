@@ -40,7 +40,6 @@
     border-radius: 7px;
     padding-block: 0.7rem;
     animation: slidein 1s ease-in-out;
-    flex-basis: calc(50% - 5px);
     margin-right: 5px;
     list-style-type: none;
     padding-left: 1rem;
@@ -54,21 +53,19 @@
     }
 
     to {
-        transform: translateX(0);
+        transform: translateY(0%);
     }
 }
 
 @keyframes slideout {
     from {
-        transform: translateX(-100%);
+        transform: translateY(-100%);
     }
 
     to {
         transform: translateY(0%);
     }
 }
-
-
 
 @media (max-width: 768px) {
     .description-equipement {
