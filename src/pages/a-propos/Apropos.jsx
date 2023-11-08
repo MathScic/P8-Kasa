@@ -21,7 +21,8 @@ const Apropos = (props) => {
           <section className={`apropos-button`}>
             <div className=''>
               <p className='apropos-writing'>Fiabilité<i class={`fa-solid fa-chevron-down hidden ${isRotated ? 'rotated' : ''}`} onClick={showContent}></i></p>
-              {aproposContent &&<p className='apropos-button-content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt.</p>}
+              {aproposContent &&
+              <p className='apropos-button-content'>Les annonces postées sur Kasa garantissent une fiabilité totle. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos equipes.</p>}
             </div>
           </section>
 

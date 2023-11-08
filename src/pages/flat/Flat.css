@@ -2,20 +2,3 @@
     color: #ff6060;
 }
 
-@media (max-width: 425px) {
-    .navbar img {
-        width: 150px;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        width: 100%;
-    }
-
-    .navbar a {
-        font-weight: 500;
-    }
-
-}

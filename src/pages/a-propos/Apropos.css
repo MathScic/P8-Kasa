@@ -15,7 +15,7 @@
     height: 40px;
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 80%;
+    max-width: 70%;
     position: relative;
 }
 
@@ -33,13 +33,12 @@
 
 .apropos-button-content {
     margin: auto;
-    width: 80%;
     background-color: rgba(169 169 169 / 20%);
     color: #ff6060;
     border-radius: 7px;
     padding-block: 0.7rem;
     animation: slidein 1s ease-in-out;
-    width: 81%;
+    max-width: 71%;
     list-style-type: none;
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -73,6 +72,12 @@
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .apropos-writing {
+        max-width: 90%;
+    }
 
+    .apropos-button-content {
+        max-width: 92%;
+    }
 }

@@ -5,7 +5,7 @@ import Footer from "./components/footer/Footer";
 import Banner from "./components/banner/Banner";
 import Main from "./pages/main/Main";
 import APropos from "./pages/a-propos/Apropos";
-import Navbar from "./navbar/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Flat from "./pages/flat/Flat";
 import Error from "./components/error/Error";
 
