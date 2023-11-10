@@ -10,7 +10,7 @@ const Main = (props) => {
  
   return (
     <div>
-      <Banner />
+      <Banner text="Chez vous, partout et ailleurs"/>
     <div className='main'>{flats.map(flat => (
       <Card className='main-card' flat={flat} />
     ))}</div>

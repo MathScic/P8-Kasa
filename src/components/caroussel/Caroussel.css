@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 21rem;
+    top: 17rem;
     left: 2rem;
     right: 2rem;
     z-index: 1;
@@ -53,6 +53,6 @@
     }
 
     .arrow {
-        top: 12rem;   
+        top: 13rem;   
     }
 }

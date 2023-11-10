@@ -27,6 +27,7 @@
     list-style-type: none;
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .flat-header {
@@ -78,7 +79,7 @@ h3 {
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        gap: 11rem;
+        gap: 12rem;
         font-size: 10px;
         margin-bottom: 2%;
     }

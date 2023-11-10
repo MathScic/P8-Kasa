@@ -1,5 +1,10 @@
 /**Description**/
 
+.collapse-container {
+    margin-bottom: 1rem;
+}
+
+
 .description-equipement {
     display: flex;
     gap: 2rem;
@@ -9,6 +14,22 @@
 
 .flat-description {
     width: 50%;
+}
+
+.collapse-container {
+    transition: all 0.3s ease,
+}
+
+.description-title {
+    cursor: pointer;
+}
+
+.description-title i.arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 .flat-description p {
@@ -39,32 +60,11 @@
     color: #ff6060;
     border-radius: 7px;
     padding-block: 0.7rem;
-    animation: slidein 1s ease-in-out;
+    animation: slidein 0.5s ease-in-out;
     margin-right: 5px;
     list-style-type: none;
     padding-left: 1rem;
     padding-bottom: 1rem;
-}
-
-
-@keyframes slidein {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(0%);
-    }
-}
-
-@keyframes slideout {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(0%);
-    }
 }
 
 @media (max-width: 768px) {

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import  {  useNavigate, useParams } from 'react-router-dom'
 import './Flat.css'
 import flats from '../../flats'
-import Collapse from '../../components/flatDescription/FlatDescription'
-import FlatImg from '../../components/flatImg/FlatImg'
+import Collapse from '../../components/collapse/Collapse'
+import Caroussel from '../../components/caroussel/Caroussel'
 import FlatHeader from '../../components/flatHeader/FlatHeader'
 import Error from '../../components/error/Error'
 
@@ -19,7 +19,7 @@ function Flat() {
   <>
   {flat ? <>
     <div className="flat-page">
-      <FlatImg pictures={flat.pictures} />
+      <Caroussel pictures={flat.pictures} />
       <FlatHeader title={flat.title} 
                   location={flat.location} 
                   tag={flat.tags.map((tag, index) => (<li key={index}>{tag}</li>))} 

@@ -14,6 +14,7 @@ a {
     font-weight: 700;
     margin-bottom: 2rem;
     max-width: 1440px;
+    margin: auto;
 }
 
 .navbar-logo {

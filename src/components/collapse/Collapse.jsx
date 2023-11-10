@@ -1,9 +1,9 @@
 import React from 'react'
-import './FlatDescription.css'
+import './Collapse.css'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-function AppartmentDescription(props) {
+function Collapse(props) {
 
     const [show, setShow] = useState(false)
     const showContent = () => {
@@ -12,8 +12,8 @@ function AppartmentDescription(props) {
 
     return (
             <section className='flat-description'>
-                <div className="">
-                    <p className='description-title'>{props.title}<i class="fa-solid fa-chevron-down" onClick={showContent}></i></p>
+                <div className='collapse-container'>
+                    <p className='description-title'>{props.title}<i className='fa-solid fa-chevron-up' onClick={showContent}></i></p>
                     {show &&<div className='description-content'>{props.content}</div>}   
                 </div>
             </section>
@@ -21,4 +21,4 @@ function AppartmentDescription(props) {
 
 }
 
-export default AppartmentDescription
+export default Collapse
