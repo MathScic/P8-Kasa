@@ -12,20 +12,27 @@
     margin-bottom: 3rem;
 }
 
-.flat-description {
+.row {
     width: 50%;
 }
 
-.collapse-container {
-    transition: all 0.3s ease,
+.turn {
+    transition: transform 0.5s ease;
+    transform: rotate(180deg);
 }
+
+.turn-reverse {
+    transition: transform 0.5s ease;
+    transform: rotate(0deg);
+}
+
 
 .description-title {
     cursor: pointer;
 }
 
 .description-title i.arrow {
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
 }
 
 .rotate {
@@ -60,12 +67,43 @@
     color: #ff6060;
     border-radius: 7px;
     padding-block: 0.7rem;
-    animation: slidein 0.5s ease-in-out;
     margin-right: 5px;
     list-style-type: none;
     padding-left: 1rem;
     padding-bottom: 1rem;
+    animation: slidein 1s ease-in-out;
 }
+
+@keyframes slidein {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 200px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate-back {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0);
+    } 
+}
+
+
 
 @media (max-width: 768px) {
     .description-equipement {

@@ -1,3 +1,17 @@
+.term-container {
+    border: 1px solid black;
+}
+
+.term-description {
+    max-width: 70%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.apropos-description {
+    max-width: 100%;
+}
+
 .apropos-button {
     margin-bottom: 2rem;
 }

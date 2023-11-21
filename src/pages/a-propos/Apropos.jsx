@@ -7,18 +7,19 @@ import Banner from '../../components/banner/Banner'
 import terms from '../../terms'
 import Collapse from '../../components/collapse/Collapse'
 
-const Apropos = (props) => {
-
+function Apropos() {
 
   return (
       <div>
         <Banner text=""/>
-        <div className='term-container'>{terms.map((term) => (
-          <Collapse key={term.name} term={term} name={term.name}/>
+        <div className='term-description'>{terms.map((term) => (
+          <Collapse className="flat-description" title={term.name} content={term.text}/>
         ))}
       </div>
       </div>  
   )
 }
+
+
 
 export default Apropos

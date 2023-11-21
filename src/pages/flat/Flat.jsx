@@ -27,8 +27,8 @@ function Flat() {
                   ownerPicture={flat.host.picture}
                   rating={flat.rating}/>
       <section className='description-equipement'>
-      <Collapse title={"Description"} content={flat.description} /> 
-      <Collapse title={"Equipements"} content={flat.equipments.map((equipment, index) => (
+      <Collapse title={"Description"} content={flat.description} row={true}/> 
+      <Collapse title={"Equipements"} row={true} content={flat.equipments.map((equipment, index) => (
     <li key={index}>{equipment}</li>
     
   ))} />
