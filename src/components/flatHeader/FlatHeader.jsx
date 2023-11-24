@@ -25,8 +25,8 @@ function AppartmentHeader(props) {
       <div className="flat-title">
         <h1>{props.title}</h1>
         <h2>{props.location}</h2>
-        <ul className='flat-tag'>
-          <li className='flat-tag-flex'>{props.tag}</li>
+        <ul className='flat-tag flat-tag-flex'>
+          {props.tag}
         </ul>
       </div>
       <div className="flat-owner">
@@ -37,7 +37,7 @@ function AppartmentHeader(props) {
           <div className="flat-owner-badge"><img src={props.ownerPicture} alt="" /></div>
         </div>
         <div className="flat-owner-stars">
-          <span>
+          <span className="rating-stars">
             <CareScale scaleValue={props.rating} />
           </span>
         </div>

@@ -16,7 +16,6 @@ function Collapse(props) {
                 <div className="collapse-container ">
                     <p className='description-title'>{props.title}<i className={`fa-solid fa-chevron-up ${show ? "turn" : "turn-reverse"}`} onClick={showContent}></i></p>
                     {show &&<div className='description-content'>{props.content}</div>} 
-                      
                 </div>
             </section>
     )

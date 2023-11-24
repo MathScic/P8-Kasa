@@ -36,8 +36,8 @@ function FlatImg({pictures}) {
         {pictures.length > 1 && 
         <>
         <div className='arrow'>
-            <i class="fa-solid fa-chevron-left arrow-left" onClick={prevSlide}></i> 
-            <i class="fa-solid fa-chevron-right arrow-right" onClick={nextSlide}></i>
+            <i className="fa-solid fa-chevron-left arrow-left" onClick={prevSlide}></i> 
+            <i className="fa-solid fa-chevron-right arrow-right" onClick={nextSlide}></i>
         </div>
         <div className='pagination'>
             <p>{currentIndex +1}/{pictures.length}</p>

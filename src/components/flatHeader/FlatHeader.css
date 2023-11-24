@@ -80,7 +80,7 @@ h3 {
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        gap: 12rem;
+        gap: 9rem;
         font-size: 10px;
         margin-bottom: 2%;
     }
@@ -107,6 +107,10 @@ h3 {
 
     .flat-title h2 {
         margin-top: 0.5rem;
+    }
+
+    .rating-stars div {
+        display: flex;
     }
 
  }

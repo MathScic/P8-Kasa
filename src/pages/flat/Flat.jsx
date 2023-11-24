@@ -8,8 +8,7 @@ import FlatHeader from '../../components/flatHeader/FlatHeader'
 import Error from '../../components/error/Error'
 
 function Flat() {
-
-  const navigate = useNavigate() 
+  
   const { flatId } = useParams()
 
   const flat = flats.find((flat) => flat.id === flatId)

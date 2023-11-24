@@ -12,7 +12,7 @@ const Main = (props) => {
     <div>
       <Banner text="Chez vous, partout et ailleurs"/>
     <div className='main'>{flats.map(flat => (
-      <Card className='main-card' flat={flat} />
+      <Card className='main-card' key={flat.id} flat={flat} />
     ))}</div>
      </div>
   )
