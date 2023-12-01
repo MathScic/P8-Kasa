@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import  {  useNavigate, useParams } from 'react-router-dom'
-import './Flat.css'
+import './Flat.scss'
 import flats from '../../flats'
 import Collapse from '../../components/collapse/Collapse'
 import Caroussel from '../../components/caroussel/Caroussel'

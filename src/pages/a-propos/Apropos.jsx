@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Apropos.css'
+import './Apropos.scss'
 import Banner from '../../components/banner/Banner'
 import terms from '../../terms'
 import Collapse from '../../components/collapse/Collapse'

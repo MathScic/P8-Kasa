@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM  from 'react-dom'
-import './Main.css'
+import './Main.scss'
 import flats from '../../flats'
 import Card from '../../components/card/Card'
 import Banner from '../../components/banner/Banner'

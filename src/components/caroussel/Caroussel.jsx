@@ -1,5 +1,5 @@
 import React from 'react'
-import './Caroussel.css'
+import './Caroussel.scss'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './FlatHeader.css'
+import './FlatHeader.scss'
 import PropTypes from 'prop-types'
 import flats from '../../flats'
 

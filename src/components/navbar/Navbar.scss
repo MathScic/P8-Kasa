@@ -1,0 +1,36 @@
+$color_1: #ff6060;
+$font-family_1: "Roboto" sans-serif;
+
+a {
+	text-decoration: none;
+	color: $color_1;
+	font-size: 25px;
+	font-weight: 400;
+}
+.navbar {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	color: $color_1;
+	font-family: $font-family_1;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	max-width: 1440px;
+	margin: auto;
+}
+.navbar-logo {
+	margin-right: auto;
+}
+@media (max-width: 425px) {
+	.navbar {
+		margin-bottom: 1rem;
+		display: flex;
+		justify-content: space-between;
+		img {
+			max-width: 150px;
+		}
+	}
+	a {
+		font-size: 15px;
+	}
+}

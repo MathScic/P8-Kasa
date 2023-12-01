@@ -1,0 +1,40 @@
+$color_1: #ff6060;
+$font-family_1: Montserrat, sans-serif;
+
+.error-logo {
+	display: flex;
+	justify-content: center;
+}
+.error-p {
+	display: flex;
+	justify-content: center;
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 50px;
+	color: $color_1;
+}
+.error-link {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+	font-size: 20px;
+	-webkit-text-decoration: underline #ff6060;
+	text-decoration: underline #ff6060;
+}
+@media (max-width: 768px) {
+	.error-logo {
+		height: 99px;
+		display: flex;
+		justify-content: center;
+	}
+	.error-p {
+		font-size: 16px;
+		line-break: strict;
+		word-break: break-all;
+	}
+	.error-link {
+		font-size: 15px;
+	}
+}
