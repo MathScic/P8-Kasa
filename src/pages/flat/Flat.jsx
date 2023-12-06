@@ -6,7 +6,6 @@ import Collapse from '../../components/collapse/Collapse'
 import Caroussel from '../../components/caroussel/Caroussel'
 import FlatHeader from '../../components/flatHeader/FlatHeader'
 import Error from '../../components/error/Error'
-import CollapseII from '../../components/collapse2/Collapse2'
 
 function Flat() {
   
@@ -28,7 +27,6 @@ function Flat() {
                   rating={flat.rating}/>
       <section className='description-equipement'>
       <Collapse title={"Description"} content={flat.description} row={true}/> 
-      <CollapseII />
       <Collapse title={"Equipements"} row={true} content={flat.equipments.map((equipment, index) => (
     <li key={index}>{equipment}</li>
     
