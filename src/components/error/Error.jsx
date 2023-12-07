@@ -7,7 +7,7 @@ const Error = () => {
   return (
     <div>
         <div className='error-logo'>
-            <img src="assets/Error404.png" alt="erreur404" /> 
+            <img src="../assets/Error404.png" alt="erreur404" /> 
         </div>
         <div className='error-p'>
             <p>Oups! La page que vous demandez n'existe pas.</p>

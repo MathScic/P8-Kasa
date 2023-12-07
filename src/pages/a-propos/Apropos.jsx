@@ -9,7 +9,7 @@ function Apropos() {
 
   return (
       <div>
-        <Banner text=""/>
+        <img src="../assets/Banner apropos.png" alt="" className='banner-apropos'/>
         <div className='term-description'>{terms.map((term) => (
           <Collapse className="flat-description" key={term.id} title={term.name} content={term.text}/>
         ))}
