@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.scss'
 
 const Navbar = () => {
@@ -8,8 +8,8 @@ const Navbar = () => {
         <div className='navbar-logo'>
             <img src='../assets/logo.png' alt='logo' />
         </div>
-          <Link to="/">Accueil</Link>
-          <Link to= "/apropos">A propos</Link>
+        <NavLink to="/" activeClassName="active">Accueil</NavLink>
+        <NavLink to= "/apropos" activeClassName="active">A propos</NavLink>
     </nav>
   )
 }

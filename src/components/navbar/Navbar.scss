@@ -1,6 +1,10 @@
 $color_1: #ff6060;
 $font-family_1: "Roboto" sans-serif;
 
+.active {
+	border-bottom: 2px solid #ff6060;
+}
+
 a {
 	text-decoration: none;
 	color: $color_1;
