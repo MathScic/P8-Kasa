@@ -13,10 +13,10 @@ clone le projet :
 git clone https://github.com/MathScic/P8-Kasa.git
 
 installer les dépendences : 
-npm install 
+### `npm install` 
 
 démarrer l'app : 
-npm start 
+### `npm start` 
 ouvre [http://localhost:3000](http://localhost:3000) dans le navigateur 
 
 
